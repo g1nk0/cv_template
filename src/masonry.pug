@@ -1,0 +1,19 @@
+doctype html
+html
+head
+    link(rel='stylesheet', href='/css/masonry.css')
+    title "henlo"
+body
+  .masonry-layout
+    - var n = 0
+    - var colors = ["red", "green", "purple", "orange"]
+    while n < 5
+      - var type = Math.floor(Math.random() * 4 + 1)
+      .masonry-layout__panel
+        .masonry-layout__panel-content(class="bg--" + colors[type - 1])
+          - var l = 0
+          while l < type
+            p.
+              #{colors[l]}
+            - l++
+      - n++

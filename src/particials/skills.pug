@@ -1,0 +1,19 @@
+.data.skills
+    .wrapper
+        .circle
+        h2 Skills
+        .line
+    - var skills = ["creative", "teamwork", "innovate", "communication"]
+    - var points = [9, 11, 6, 11]
+    - var n = 0
+    while n < 4
+        - var k = 0
+        h3 #{skills[n]}
+        ul
+            while k < 12
+                if k == points[n] - 1
+                    li.end-points
+                else
+                    li
+                - k++     
+        - n++

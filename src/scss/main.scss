@@ -1,0 +1,192 @@
+@import "../css/reset.css";
+
+$base-color: #3d6cb0;
+$bg-color: #fff;
+$empty-skill-point-color: #e6e6e6;
+
+// @include font-face(myriad-pro, "../../fonts/MyriadPro-LightSemiExt.otf");
+
+@font-face {
+    font-family: "myriad-pro";
+    font-weight: 200;
+    font-style: normal;
+    src: url("../../fonts/MyriadPro-LightSemiExt.otf") format("opentype");
+}
+@font-face {
+    font-family: "myriad-pro";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../../fonts/MyriadPro-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "myriad-pro";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../../fonts/MyriadPro-Regular.otf") format("opentype");
+}
+
+.container {
+    font-family: "myriad-pro", sans-serif;
+    padding: 20px;
+    flex-wrap: wrap; 
+    padding-left: 90px;
+}
+
+p {
+    margin-top: 24px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.info {
+    width: 100%;
+    margin-bottom: 114px;
+    text-align: center;
+
+    .person {
+        display: inline-block;
+        width: 360px;
+        height: 360px;
+        margin-right: 0 auto;
+    }
+
+    h1, h2, h3 {
+        color: black;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 95px;
+        font-weight: bold;
+        margin-bottom: 7px;
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+
+    h3 {
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 37px;
+    }
+
+    h1 {
+        margin-top: 48px;
+        font-weight: 200;
+        font-size: 82px;
+        margin-left: -5px;
+    }
+}
+.circle {
+    background: $base-color;
+    border-radius: 50%;
+    box-shadow: 0 0 0 23px $bg-color inset;
+    box-sizing: border-box;
+    border: 1px solid $base-color;
+}
+
+.left {
+    float: left;
+    width: 35.5%;
+    margin-right: 20px;
+    text-align: center;
+}
+.data {
+    text-align: left;
+    margin-top: 72px;
+
+    .circle {
+        width: 112px;
+        height: 112px;
+        box-shadow: 0 0 0 5px white inset;
+    }
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+
+    .circle {
+        margin-right: 17px;
+    }
+
+    h2 {    
+        vertical-align: middle;
+        font-size: 60px;
+        color: #3d6cb0;
+        letter-spacing: 2px;
+        margin-right: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 8px;
+    }
+
+    .line {
+        flex-grow: 1;
+        background: #3d6cb0;
+        height: 8px;
+        margin-top: -5px;
+    }
+}
+
+.contact {
+    table {
+        margin-top: 43px;
+        margin-left: -10px;
+
+        td {
+            padding: 10px;
+            padding-right: 52px;
+            padding-bottom: 42px;
+            font-size: 32px;
+        }
+
+        tr:last-of-type td {
+            padding-bottom: 0px;
+        }
+    }
+    
+    tr td:first-of-type {
+        font-weight: bold;        
+        font-size: 32px;
+        color: #3d6cb0;
+        text-transform: uppercase;;
+    }
+}
+
+.skills {
+    text-align: center;
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        background: $base-color;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    li:last-of-type {
+        margin-right: 0px;
+    }
+
+    h3:first-of-type {
+        margin-top: 44px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 40px;
+        margin-top: 39px;
+        margin-bottom: 14px;
+    }
+
+    .end-points ~ li {
+        background-color: $empty-skill-point-color;
+    }
+}
