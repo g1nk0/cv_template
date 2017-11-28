@@ -190,3 +190,75 @@ p {
         background-color: $empty-skill-point-color;
     }
 }
+
+.right {
+    width: 57%;
+    float: right;
+
+    .data {
+        margin-top: -16px;
+        margin-left: -28px;
+    }
+}
+
+.education {
+    ul {
+        margin-top: 47px;
+        margin-left: 15px;
+
+        
+
+        h2 {
+            vertical-align: top;
+            display: inline-block;
+            font-size: 39px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            margin-top: 12px;
+            font-size: 40px;
+        }
+
+        p {
+            margin-top: 12px;
+        }
+
+        h2:first-of-type {
+            color: $base-color;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h2:last-of-type {
+            margin-left: 24px;
+        }
+
+        li {
+            display: flex;
+            margin-top: 25px;
+        }
+
+
+    }
+
+    li:before {
+        content: "";
+        width: 32px;
+        height: 32px;
+        background: black;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 30px;
+        flex-shrink: 0;
+        vertical-align: top;
+    }
+
+    li div {
+        display: inline-block;
+    }
+    
+
+    
+    
+}
