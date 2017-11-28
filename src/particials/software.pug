@@ -1,0 +1,23 @@
+.data.software
+    .wrapper
+        .circle
+        h2 Software
+        .line
+    table
+        colgroup
+            col
+            col
+        - var software = ['Photoshop', 'Dreamweaver', 'Illustator', 'after effects', 'indesign', 'html&css3']
+        - var n = 0
+        while n < software.length / 2
+            tr
+                td= software[n * 2]
+                td= software[n * 2 + 1]
+            tr
+                td
+                    .progression
+                td
+                    .progression
+            - n++
+        
+
